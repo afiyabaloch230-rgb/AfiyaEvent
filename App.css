@@ -1,0 +1,140 @@
+
+
+/* PAGE DESIGN */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #edf5ff, #e1f5ff, #f4f0ff);
+  color: #102a50;
+}
+
+/* ALL TASK CONTAINERS */
+#root > div {
+  width: 100%;
+  padding: 35px 15px;
+  box-sizing: border-box;
+}
+
+/* HEADINGS */
+h1 {
+  color: #073b78;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color: #1265a8;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* BUTTON DESIGN */
+button {
+  display: inline-block;
+  padding: 13px 28px;
+  margin: 12px auto;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #0645a5, #087fbd, #13b8bd);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  box-shadow: 0 7px 20px rgba(6, 91, 175, 0.25);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  background: linear-gradient(120deg, #073b78, #075f9e, #078f9e);
+  box-shadow: 0 12px 25px rgba(6, 91, 175, 0.35);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* INPUT DESIGN */
+input {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+  padding: 15px 17px;
+  margin: 18px auto;
+  border: 2px solid #d5e6f7;
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  color: #12345a;
+  font-size: 15px;
+  box-shadow: 0 5px 18px rgba(24, 77, 130, 0.06);
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #91a6bf;
+}
+
+input:focus {
+  border-color: #078bc1;
+  box-shadow: 0 0 0 4px rgba(7, 139, 193, 0.13);
+  background: #ffffff;
+}
+
+/* FORM DESIGN */
+form {
+  text-align: center;
+}
+
+/* TASK 1, 2 AND 3 CONTAINER LOOK */
+#root > div > div {
+  max-width: 650px;
+  margin: 25px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #f2f8ff);
+  border: 1px solid #dceafa;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(13, 65, 120, 0.10);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#root > div > div:hover {
+  box-shadow: 0 16px 40px rgba(13, 65, 120, 0.16);
+}
+
+/* MESSAGES */
+#root > div > div h2 {
+  overflow-wrap: anywhere;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  #root > div {
+    padding: 20px 10px;
+  }
+
+  #root > div > div {
+    padding: 22px 16px;
+    margin: 18px auto;
+    border-radius: 17px;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  input {
+    max-width: 100%;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
